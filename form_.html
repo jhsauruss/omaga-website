@@ -1,0 +1,266 @@
+<html>
+ <head>
+  </head>
+    <style>
+      body {
+        font-family: Arial, Sans-Serif;
+        margin: 0;
+        background-color: white;
+        color: #333;
+      }
+      header {
+            background-color: #AF69EE;color:#fff;
+        padding:10px 0;
+        text-align:center;
+      }
+      .navbar {
+        display: flex;
+        justify-content: center;
+        background-color: pink;
+      }
+      .navbar a {
+        margin-right: 10px;
+        text-decoration: none;
+      }
+      .navbar {
+        background: pink;
+        padding: 20px 30px;
+      }
+          .product {
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        padding: 10px;
+        margin: 10px;
+        float: left;
+        width: 30%;
+    }
+    .product img {
+        width: 100%;
+        border-radius: 5px;
+    }
+           .container {
+        max-width: 1000px;
+        margin:10px auto;
+        padding: 25px;
+        background-color: #fff;
+        border-radius: 5px;
+      }
+      footer {
+        text-align: center;
+        padding: 1px;
+        background-color:#AF69EE;
+        color:#fff;
+        position:fixed;
+        bottom:0;
+        width:100%;
+      }
+      </style>
+    <body>
+<header>
+  <h1> Selamat datang di website kami</h1>
+</header>
+<div class="navbar">
+    <a href="beranda.html">Beranda</a>
+    <a href="artikel.html">Artikel</a>
+    <a href="katalog_buku.html">Katalog buku</a>
+    <a href="buku_tamu.html">Form buku</a>
+    <a href="kontak.html">Kontak</a>
+  </div>
+<body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Perpustakaan</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            margin: 0;
+            padding: 0px;
+        }
+        .container {
+            max-width: 600px;
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin: auto;
+        }
+        h2 {
+            text-align: center;
+            color: #333;
+        }
+        label {
+            font-weight: bold;
+            margin-top: 9px;
+            display: block;
+        }
+        input[type="text"], input[type="number"], input[type="date"], select, textarea {
+            width: 100%;
+            padding: 8px;
+            margin-top: 5px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        input[type="submit"] {
+            background-color: #7852A9;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            width: 100%;
+        }
+        input[type="submit"]:hover {
+            background-color: #7852A9;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h2>Form Peminjaman Buku</h2>
+    <form action="/submit" method="post">
+        <label for="name">Nama Peminjam:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="book-title">Judul Buku:</label>
+        <input type="text" id="book-title" name="book-title" required>
+
+        <label for="author">Pengarang Buku:</label>
+        <input type="text" id="author" name="author" required>
+
+        <label for="date-borrowed">Tanggal Peminjaman:</label>
+        <input type="date" id="date-borrowed" name="date-borrowed" required>
+
+        <label for="return-date">Tanggal Pengembalian:</label>
+        <input type="date" id="return-date" name="return-date" required>
+
+        <label for="notes">Catatan Tambahan:</label>
+        <textarea id="notes" name="notes" rows="4"></textarea>
+
+        <input type="submit" value="Submit">
+    </form>
+</div>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabel Peminjaman Buku Vertikal</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            margin: 0;
+            padding: 0px;
+        }
+        .container {
+            max-width: 400px;
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin: auto;
+        }
+        h2 {
+            text-align: center;
+            color: #333;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        table, th, td {
+            border: 1px solid #ccc;
+        }
+        th, td {
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #f4f4f4;
+            font-weight: bold;
+            width: 40%;
+        }
+        tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+        tr:hover {
+            background-color: #f1f1f1;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h2>Detail Peminjaman Buku</h2>
+    <table>
+        <tbody>
+            <tr>
+                <th>No.</th>
+                <td>1</td>
+            </tr>
+            <tr>
+                <th>Nama Peminjam</th>
+                <td>Yulia sapfadilah</td>
+            </tr>
+            <tr>
+                <th>Judul Buku</th>
+                <td>Dreaming of you</td>
+            </tr>
+            <tr>
+                <th>Pengarang</th>
+                <td>Rayyn_</td>
+            </tr>
+            <tr>
+                <th>Tanggal Peminjaman</th>
+                <td>2024-08-01</td>
+            </tr>
+            <tr>
+                <th>Tanggal Pengembalian</th>
+                <td>2024-08-15</td>
+            </tr>
+            <!-- Tambahkan data peminjaman lainnya di sini -->
+        </tbody>
+    </table>
+
+    <table>
+        <tbody>
+            <tr>
+                <th>No.</th>
+                <td>2</td>
+            </tr>
+            <tr>
+                <th>Nama Peminjam</th>
+                <td>Taylor Swift</td>
+            </tr>
+            <tr>
+                <th>Judul Buku</th>
+                <td>Check & Mate</td>
+            </tr>
+            <tr>
+                <th>Pengarang</th>
+                <td>Ali Hazelwood</td>
+            </tr>
+            <tr>
+                <th>Tanggal Peminjaman</th>
+                <td>2024-08-05</td>
+            </tr>
+            <tr>
+                <th>Tanggal Pengembalian</th>
+                <td>2024-08-19</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+</body>
+</html>
+
+</body>
+  <footer>
+  copy&; 2024 ellenzn. all rights reserved.
+      </footer>
+      </body>
+</html>

@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="id">
+  <html>
+ <head>
+  </head>
+    <style>
+      body {
+        font-family: Arial, Sans-Serif;
+        margin: 30;
+        background-color: white;
+        color: #333;
+      }
+      header {
+            background-color: #AF69EE;color:#fff;
+        padding:5px 0;
+        text-align:center
+        width:100vh;
+        margin: 100;
+      }
+      .navbar {
+        display: flex;
+        justify-content: center;
+        background-color: pink;
+      }
+      .navbar a {
+        margin-right: 10px;
+        text-decoration: none;
+      }
+      .navbar {
+        background: pink;
+        padding: 10px 40px;
+      }
+          .product {
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        padding: 10px;
+        margin: 10px;
+        float: left;
+        width: 30%;
+    }
+    .product img {
+        width: 100%;
+        border-radius: 5px;
+    }
+           .container {
+        max-width: 1000px;
+        margin:10px auto;
+        padding: 25px;
+        background-color: #fff;
+        border-radius: 5px;
+      }
+      footer {
+        text-align: center;
+        padding: 1px;
+        background-color:#AF69EE;
+        color:#fff;
+        position:fixed;
+        bottom:0;
+        width:100%;
+      }
+      </style>
+    <body>
+<header>
+  <h1> Selamat datang di website kami</h1>
+</header>
+<div class="navbar">
+    <a href="beranda.html">Beranda</a>
+    <a href="artikel.html">Artikel</a>
+    <a href="katalog_buku.html">Katalog buku</a>
+    <a href="form_.html">Form buku</a>
+    <a href="kontak.html">Kontak</a>
+  </div>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontak</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+
+        main {
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 80vh;
+        }
+
+        .contact-form {
+            max-width: 600px;
+            width: 100%;
+            background: #f4f4f4;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .contact-form h2 {
+            margin-top: 0;
+        }
+
+        .contact-form label {
+            display: block;
+            margin: 10px 0 5px;
+        }
+
+        .contact-form input, .contact-form textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+
+        .contact-form button {
+            background: #7852A9;
+            color: #fff;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        .contact-form button:hover {
+            background: #7852A9;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <section class="contact-form">
+                <div class="container">
+        <div class="contact-info">
+          <h1>Hubungi Kami</h1>
+            <p><strong>Alamat:</strong> Jl. Gamon No.27, Merindu</p>
+            <p><strong>Email:</strong> Sigma@gmail.com</p>
+            <p><strong>Telepon:</strong> (021) 123-4567</p>
+        </div>
+            <form id="contactForm">
+                <label for="name">Nama Lengkap:</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="message">Pesan:</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+                
+                <button type="submit">Kirim</button>
+            </form>
+        </section>
+    </main>
+
+    <script>
+        document.getElementById('contactForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+            alert('Pesan kamu dah ke kirim ya seng!');
+        });
+    </script>
+</body>
+</html>
+ <footer>
+  copy&; 2024 ellenzn. all rights reserved.
+      </footer>
+      </body>
+</body>
+</html>
+
+</body>
+</html>
